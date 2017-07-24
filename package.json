@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "moment": "^2.18.1"
+  },
+  "name": "date-facts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SquaredDev/date-facts.git",
+  "author": "James <boydston.j@gmail.com>",
+  "license": "MIT"
+}
