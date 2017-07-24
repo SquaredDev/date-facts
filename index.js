@@ -13,7 +13,18 @@ let now = moment()
 
 console.log(`It is ${chalk.blue(moment().format("LLLL"))}.`);
 console.log(`It is ${chalk.magenta(moment().format("DDDo"))} day of the year.`);
-console.log(`It is ${chalk.cyan(moment().format("s"))} seconds into the day.`);
+
+let secCount
+function seconds() {
+  secCount = 0
+  secCount += parseInt(moment().format("H")) * 60 * 60
+  secCount += parseInt(moment().format("m")) * 60
+  secCount += parseInt(moment().format("s"))
+  return secCount
+}
+console.log(`It is ${chalk.cyan(seconds())} seconds into the day.`);
+
+
 
 
 
