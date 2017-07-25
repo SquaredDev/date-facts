@@ -8,7 +8,7 @@ console.log(`It is ${chalk.magenta(moment().format("DDDo"))} day of the year.`);
 let secCount
 function seconds() {
   secCount = 0
-  secCount += parseInt(moment().format("H")) * 60 * 60
+  secCount += parseInt(moment().format("H")) * 3600
   secCount += parseInt(moment().format("m")) * 60
   secCount += parseInt(moment().format("s"))
   return secCount
